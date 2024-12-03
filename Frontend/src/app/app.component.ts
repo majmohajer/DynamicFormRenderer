@@ -1,11 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './services/data-service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { Observable } from 'rxjs';
+import { DataService } from './services/data.service';
+
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  imports:  [
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    CommonModule
+  ],
+  providers: [DataService],
 })
 export class AppComponent implements OnInit {
   
@@ -14,6 +27,7 @@ export class AppComponent implements OnInit {
   formsJson: any; 
 
   constructor(private fb: FormBuilder, private dataService: DataService) {}
+
 
   ngOnInit() {
    this.dataService.getFormsJsonData().subscribe((res: any)=>{
