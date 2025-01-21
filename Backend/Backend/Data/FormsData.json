@@ -5,15 +5,15 @@
     "Placeholder": "Item Type",
     "Hint": "",
     "DataType": "Value Groups",
-    "DefaultValue": null,
+    "DefaultValue": "PLNSUP3",
     "Required": true,
     "Location": {
-      "x": 0,
+      "x": 9,
       "y": 0
     },
     "Size": {
-      "Height": 40,
-      "Width": 175
+      "Height": 24,
+      "Width": 65
     },
     "ValidValues": [
       {
@@ -39,12 +39,12 @@
     "DefaultValue": null,
     "Required": true,
     "Location": {
-      "x": 200,
+      "x": 80,
       "y": 0
     },
     "Size": {
-      "Height": 40,
-      "Width": 175
+      "Height": 24,
+      "Width": 65
     },
     "ValidValues": [
       {
@@ -69,12 +69,12 @@
     "DataType": "Value Groups",
     "DefaultValue": null,
     "Location": {
-      "x": 600,
+      "x": 340,
       "y": 0
     },
     "Size": {
-      "Height": 40,
-      "Width": 175
+      "Height": 24,
+      "Width": 60
     },
     "ValidValues": [
       {
@@ -100,12 +100,12 @@
     "DefaultValue": null,
     "Required": true,
     "Location": {
-      "x": 800,
-      "y": 0
+      "x": 9,
+      "y": 396
     },
     "Size": {
-      "Height": 40,
-      "Width": 175
+      "Height": 24,
+      "Width": 440
     },
     "ValidValues": [
       {

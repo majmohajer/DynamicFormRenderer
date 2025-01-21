@@ -33,4 +33,10 @@
         public string Description { get; set; }
         public string? Status { get; set; }
     }
+
+    public class Test
+    { 
+        public string ItemType { get; set; }
+        
+    }
 }

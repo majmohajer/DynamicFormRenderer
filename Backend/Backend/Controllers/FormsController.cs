@@ -27,5 +27,12 @@ namespace Backend.Controllers
 
             return Ok(results);
         }
+
+        [HttpPost]
+        [Route("AddDynamicForms")]
+        public IActionResult AddDynamicForms([FromBody] Test form)
+        {
+            return Ok(form);
+        }
     }
 }

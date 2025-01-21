@@ -12,4 +12,9 @@ export class DataService {
   public getFormsJsonData(): Observable<any> {
     return this.http.get('https://localhost:7290/api/Forms/GetDynamicForms');
   }
+
+  public addFormJsonData(data: any): Observable<any> {
+    return this.http.post('https://localhost:7290/api/Forms/AddDynamicForms', data);
+  } 
+
 }
